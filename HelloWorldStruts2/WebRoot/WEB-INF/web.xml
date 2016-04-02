@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>  
+<web-app xmlns="http://java.sun.com/xml/ns/javaee"  
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"  
+  xsi:schemaLocation="http://java.sun.com/xml/ns/javaee  
+                      http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"  
+  version="3.0"  
+  metadata-complete="false">  
+  <display-name>Struts 2</display-name>
+   <welcome-file-list>
+      <welcome-file>index.jsp</welcome-file>
+   </welcome-file-list>
+   <!-- web.xml它是一个任何对 Struts 2 请求的入口点。 -->
+   
+    <!-- 定义 Struts 2 的核心 Filter -->  
+    <filter>  
+        <filter-name>struts2</filter-name>  
+        <filter-class>org.apache.struts2.dispatcher.FilterDispatcher</filter-class>  
+    </filter>  
+    <!-- 让 Struts 2 的核心 Filter 拦截所有请求 -->  
+    <filter-mapping>  
+        <filter-name>struts2</filter-name>  
+        <url-pattern>/*</url-pattern>  
+    </filter-mapping>  
+</web-app>  
