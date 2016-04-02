@@ -7,10 +7,19 @@
     
     <!-- 所有的Action定义都应该放在package下 -->  
     <package name="helloworld" extends="struts-default">  
+    
+       <interceptors>
+         <interceptor name="myinterceptor"
+            class="com.tutorialspoint.Struts 2.MyInterceptor" />
+      </interceptors>
+      
+      
     <!-- 执行方法返回结果如果是success，则把helloworld.jsp呈现给用户 -->
         <action name="hello" 
             class="com.tutorialspoint.struts2.HelloWorldAction" 
             method="execute">
+            <interceptor-ref name="params"/>
+            <interceptor-ref name="myinterceptor"/>
             <result name="success">/HelloWorld.jsp</result>
             <result name="error">/error.jsp</result>
       </action>

@@ -17,6 +17,7 @@ public class HelloWorldAction extends ActionSupport {
     // 定义处理用户请求的execute方法  
     public String execute() throws Exception {   
     	if ("secret".equals(name)){
+    		System.out.println("Now is inside the process");
     		return "success";
     	}else{
     		return "error";
