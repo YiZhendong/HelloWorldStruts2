@@ -14,7 +14,7 @@
     <!-- 定义 Struts 2 的核心 Filter -->  
     <filter>  
         <filter-name>struts2</filter-name>  
-        <filter-class>org.apache.struts2.dispatcher.FilterDispatcher</filter-class>  
+        <filter-class>org.apache.struts2.dispatcher.ng.filter.StrutsPrepareAndExecuteFilter</filter-class>  
     </filter>  
     <!-- 让 Struts 2 的核心 Filter 拦截所有请求 -->  
     <filter-mapping>  

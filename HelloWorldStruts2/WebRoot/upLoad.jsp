@@ -8,10 +8,10 @@
 <title><s:text name="loginPage"/></title>  
 </head>  
 <body>  
-<s:form action="login">  
-    <s:textfield name="username" key="user"/>  
-    <s:textfield name="password" key="pass"/>  
-    <s:submit key="login"/>  
-</s:form>  
+<form action="upload" method="post" enctype="multipart/form-data">  
+    <label>Please Upload Your File</label>
+    <input type="file" name="myFile"/>
+    <input type="submit" value="upload"/>
+</form>  
 </body>  
 </html>  
