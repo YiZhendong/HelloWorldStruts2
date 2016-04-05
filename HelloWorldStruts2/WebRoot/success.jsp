@@ -24,6 +24,6 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
   </head>
   
   <body>
-    You have been uploaded successfully---<s:property value="myFileFileName"/>
+    You have been uploaded successfully---<!--<s:property value="myFileFileName"/>-->
   </body>
 </html>

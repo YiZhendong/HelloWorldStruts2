@@ -8,6 +8,11 @@
 <meta http-equiv="Content-Type" content="text/html; charset=GBK">  
 </head>  
 <body>    
-        Hello World,<s:property value="name"/>   
+		<s:form action="empinfo" method="post">
+			<s:textfield name="name" label="Name" size="20"/>
+			<s:textfield name="age"  label="Age"  size="20"/>
+			<s:submit name="submit" label="Submit" align="center"/>
+		</s:form>
+        <!--Hello World,<s:property value="name"/>    --> 
 </body>  
 </html> 
