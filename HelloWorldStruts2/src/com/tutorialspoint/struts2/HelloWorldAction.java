@@ -25,7 +25,7 @@ public class HelloWorldAction extends ActionSupport {
 	public void setName(String name) {
 		this.name = name;
 	}
-  
+  /*
     // 定义处理用户请求的execute方法  
     public String execute() throws Exception {   
     	if ("secret".equals(name)){
@@ -35,7 +35,11 @@ public class HelloWorldAction extends ActionSupport {
     		return "error";
     	}    
     } 
-    
+    */
+	
+	public String execute() {
+		return "success";
+	}
     public void validate () {
     	if (name==null || name.trim().equals("")){
     		addFieldError("name","The name is required");
